@@ -1,0 +1,13 @@
+/* HTML */
+html {
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+/* Header */
+.topcontainer {
+  display: flex;
+  flex-direction: row;
+  background-color: white
+  color: black;
+}

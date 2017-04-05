@@ -1,0 +1,61 @@
+/* HTML */
+html {
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+/* Header */
+header {
+  width: 100%;
+}
+
+.topcontainer {
+  display: flex;
+  /*flex-direction: row;*/
+  background-color: white
+  color: black;
+  height: 64px;
+  width:100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+.menulist {
+  width: 100%;
+
+}
+
+nav .menu {
+  display: flex;
+
+}
+
+nav li {
+  padding-left: 16px;
+}
+
+.menulist .menu {
+  align-items: center;
+
+}
+
+.menulist .mobile-nav {
+  display: none;
+}
+
+/* Banner */
+.learn
+
+
+.learn .bannerpic {
+  width: 60%;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-right: 40px;
+  padding-bottom: 32px;
+}

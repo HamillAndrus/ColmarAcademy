@@ -144,6 +144,7 @@ p.infoname {
 }
 .info1 {
   display: flex;
+
 }
 .infocampus {
   display: flex;
@@ -178,14 +179,17 @@ p.infodescript {
   display: flex;
   background-color: lightgray;
 }
-.learning h1 {
-  color: black;
-  justify-content: center;
+.title h1 {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 .learning {
   /*flex-wrap: wrap;*/
   background-color: lightgray;
-  align-content: space-around;
+  /*align-content: space-around;*/
+  margin: 0 auto;
 }
 .learningbox {
   height: 275px;
@@ -226,4 +230,85 @@ p.infodescript {
 }
 .learningbox2 {
   background-color: white;
+}
+.thesis {
+  display: flex;
+}
+.thesistitle h1 {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.thesisvideo {
+  padding-left: 24px;
+
+}
+h3.videotitle {
+  padding-top: 24px;
+  font-size: 1rem;
+  padding-left: 16px;
+}
+p.thesisquote {
+  padding-top: 8px;
+  font-size: .75rem;
+  padding-left: 16px;
+}
+.thesisSmallColumn {
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+
+}
+.thesisLargeColumn {
+  width: 60%;
+}
+.thesisBox {
+  display: flex;
+  width: 423px;
+  height: 168px;
+}
+.thesisPic {
+  padding: 16px;
+  width: 125px;
+  height: 125px;
+}
+.thesisPic1 {
+  padding: 16px;
+  width: 125px;
+  height: 125px;
+}
+.thesisText h3 {
+  font-size: 1.25rem;
+  font-weight: lighter;
+
+}
+.thesisText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.thesisText p {
+  font-size: .85rem;
+  padding-top: 16px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  border-top: 1px solid lightgray;
+  padding-top: 16px;
+  padding-bottom: 48px;
+  font-size: .95rem;
+
+}
+.right {
+  display: flex;
+  flex-direction: row;
+}
+.footerTerms {
+  padding-left: 800px;
+}
+.footerPrivacy {
+  padding-left: 50px;
 }

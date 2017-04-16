@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/Style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
     <title>Colmar Academy</title>
 </head>
 
@@ -12,9 +13,10 @@
   <div class="top">
     <div class="logo">
         <img src="./resources/images/images/ic-logo.svg" />
-        <span>Colmar</span>
-        <span>Academy</span>
+        <span class="name">COLMAR</span>
+        <span>ACADEMY</span>
     </div>
+    <div class="menuBox">
     <nav class="menulist">
         <ul class="menu">
             <li>On campus</li>
@@ -22,10 +24,16 @@
             <li>For companies</li>
             <li>Sign In</li>
         </ul>
-        <ul class="mobile-nav">
-            <li>Menu</li>
-        </ul>
+        <div id="mobile-nav">
+          <nav>
+            <span><img src="./resources/images/images/ic-logo.svg" /></span>
+            <span><img src="./resources/images/images/ic-on-campus.svg" /></span>
+            <span><img src="./resources/images/images/ic-online.svg" /></span>
+            <span><img src="./resources/images/images/ic-login.svg" /></span>
+        </nav>
+      </div>
     </nav>
+  </div>
   </div>
   <div class="mainbody">
 <!--Banner section-->
@@ -42,7 +50,7 @@
   <div class="infosection">
   <div class="largerColumn">
       <img class="infopic" src="./resources/images/images/information-main.jpg" />
-        <h1 class="info1">It doesn't hurt to keep practing</h1>
+        <h1 class="info1a">It doesn't hurt to keep practicing</h1>
         <p class="infoquote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <p class="infoname">Emanual, Sr Strategist
             at Hiring.com</p>
@@ -52,7 +60,7 @@
             <img class="infopicsmall" src="./resources/images/images/information-orientation.jpg" />
             <div class="infoinfo">
             <h3 class="infoline1">Orientation date</h3>
-            <p class="infodescript">Tue 10/11 & Wed 10/12: 8am-3 pm</p>
+            <p class="infodescript">Tue 10/11 & Wed 10/12: 8 am-3 pm</p>
             <a class="read">Read more</a>
           </div>
         </div>
@@ -82,6 +90,7 @@
                 <h1>Start Learning</h1>
               </div>
         <div class="learningsoftwareengineering">
+          <div class="row1">
           <div class="learningbox">
         <img class="learningpic" src="./resources/images/images/course-software.jpg">
         <div class="learningbox2">
@@ -101,11 +110,13 @@
     <div class="learningbox">
         <img class="learningpic" src="./resources/images/images/course-design.jpg">
         <div class="learningbox2">
-        <h3>'Design'</h3>
+        <h3>Design</h3>
         <h4>COURSES</h4>
         <p>User Experience Design, User Research, Visual Design</p>
     </div>
   </div>
+  </div>
+  <div class="row2">
     <div class="learningbox">
         <img class="learningpic" src="./resources/images/images/course-data.jpg">
         <div class="learningbox2">
@@ -134,6 +145,7 @@
     </div>
     </div>
     </div>
+    </div>
   </div>
     <!--Thesis Exhibit -->
     <div class="flexcontainer">
@@ -143,7 +155,7 @@
           </div>
           <div class="thesis">
           <div class="thesisLargeColumn">
-            <video class="thesisvideo" src="./resources/images/videos/thesis.mp4" width="320" height="240" controls>Video not supported</video>
+            <video class="thesisvideo" src="./resources/images/videos/thesis.mp4" width="640" height="560" controls>Video not supported</video>
             <h3 class ="videotitle">Reimagine urban</h3>
             <p class="thesisquote">"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consquat neque. sed non accumsan urna. Phasellus sed consequat ex. etiam eget magna laoreet efficitur dolor consequat, tristique ligula."</p>
           </div>

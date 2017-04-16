@@ -1,7 +1,8 @@
 /* HTML */
 html {
-  font-family: helvetica;
+  font-family: Montserrat;
   font-size: 18px;
+  color: #3B433B;
 }
 
 /* Header */
@@ -9,17 +10,11 @@ header {
   width: 100%;
 }
 
-/*.topcontainer {
-  display: flex;
-  /*flex-direction: row;*/
-  /*background-color: white
-  color: black;
-  height: 64px;
-  width:100%;
-}*/
 div.top {
-  display:inline;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:64px;
 }
 
 .logo {
@@ -27,17 +22,22 @@ div.top {
   align-items: center;
   /*justify-content: center;*/
   padding-left: 24px;
+  width: 60%;
 }
 
+.name {
+  font-weight: 500;
+}
 ul.menu {
-  justify-content: flex-end;
-  display: inline;
+  display: flex;
+  flex-direction: row;
   padding-left: 16px;
+
 }
-
-.menulist {
-  /*width: 100%;*/
-
+.menuBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 nav .menu {
@@ -47,21 +47,17 @@ nav .menu {
 
 nav li {
   padding-left: 16px;
+
 }
 
 .menulist .menu {
-  align-items: center;
-  text-align: right;
+  /*align-items: center;
+  text-align: right;*/
 }
 
-.menulist .mobile-nav {
+#mobile-nav {
   display: none;
 }
-
-/*.mainbody {
-  display: flex;
-  flex-direction: column;
-}*/
 
 /* Banner */
 .learn {
@@ -119,16 +115,25 @@ h3 {
 h1.info1 {
   margin-top: 32px;
   margin-bottom: 24px;
+  /*margin-left: 24px;*/
+}
+
+h1.info1a {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  margin-left: 24px;
 }
 
 p.infoquote {
   width: 60%;
+  margin-left: 24px;
 }
 
 p.infoname {
   width: 60%;
   padding-top: 50px;
   padding-bottom: 45px;
+  margin-left: 24px;
 }
 .largerColumn {
   width: 800px;
@@ -194,6 +199,8 @@ p.infodescript {
 .learningbox {
   height: 275px;
   width: 250px;
+  padding-left: 32px;
+  /*padding-right: 32px;*/
 }
 .learningpic {
   height: 125px;
@@ -227,6 +234,17 @@ p.infodescript {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  padding-left: 48px;
+  padding-right: 48px;
+
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
 }
 .learningbox2 {
   background-color: white;
@@ -253,6 +271,7 @@ p.thesisquote {
   padding-top: 8px;
   font-size: .75rem;
   padding-left: 16px;
+  padding-bottom: 32px;
 }
 .thesisSmallColumn {
   display: flex;
@@ -262,6 +281,9 @@ p.thesisquote {
 }
 .thesisLargeColumn {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+
 }
 .thesisBox {
   display: flex;
@@ -311,4 +333,165 @@ footer {
 }
 .footerPrivacy {
   padding-left: 50px;
+}
+
+@media only screen and (max-width:480px){
+h3.infoline1 {
+  padding-top: 1px;
+}
+}
+@media only screen and (max-width:480px){
+  .top {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #mobile-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #mobile-nav img {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  ul.menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .learn {
+    display: flex;
+    flex-direction: column;
+  }
+  .learn .bannerpic {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .description {
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 16px;
+  }
+  h1.info1 {
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 16px;
+    margin-top: .5px;
+    margin-bottom: 0.5px;
+  }
+  .start {
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+  }
+  .largerColumn{
+    display: none;
+  }
+  .info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .info1a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .infopicsmall {
+    width: 70%;
+    height: 40%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .infoinfo {
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .learningpic {
+    display: none;
+  }
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .learningbox2 h4 {
+    display: none;
+  }
+  .learningbox2 p {
+    display: none;
+  }
+  .learningbox2 {
+    background-color: lightgray;
+    height: 48px;
+    width: 250px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .learning {
+    background-color: white;
+
+  }
+  .title {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    /*padding-left: 16px;*/
+    /*padding-right: 16px;*/
+  }
+  .learningbox2 h3 {
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    /*line-height: 48px;*/
+  }
+  .learningbox {
+    /*height: 48px;*/
+    /*width: 250px;*/
+    /*padding-bottom: 8px;*/
+    /*margin-bottom: 8px;*/
+    /*display: none;*/
+  }
+  .learningsoftwareengineering {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .thesisSmallColumn {
+    display: none;
+  }
+  .thesisvideo {
+    height: 450px;
+    width: 375px;
+  }
+  h3.videotitle {
+    display: none;
+  }
+  p.thesisquote {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  p.copyright {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
